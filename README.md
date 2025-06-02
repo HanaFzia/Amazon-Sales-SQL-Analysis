@@ -5,7 +5,7 @@ This project explores Amazon Sales Data between February 2 and April 2 2025, usi
 To analyze and summarize key performance indicators (KPIs) from raw sales data using SQL, and provide data-driven answers to common business questions.
 
 ## Business Questions Answered
-Dataset Source: [Amazon Sales 2025](https://www.kaggle.com/datasets/zahidmughal2343/amazon-sales-2025)
+Dataset Source: [Amazon Sales 2025 (Kaggle)](https://www.kaggle.com/datasets/zahidmughal2343/amazon-sales-2025)
 
 #### Order Performance
 How many orders were completed?
