@@ -1,9 +1,12 @@
 # Amazon-Sales-SQL-Analysis
 This project explores Amazon Sales Data between February 2 and April 2 2025, using SQL to extract  meaningful business insights. The goal is to help stakeholders understand customer behavior, product performance, and operational efficiency.
+
 ## Objectives
 To analyze and summarize key performance indicators (KPIs) from raw sales data using SQL, and provide data-driven answers to common business questions.
+
 ## Business Questions Answered
 Dataset Source: [Amazon Sales 2025](https://www.kaggle.com/datasets/zahidmughal2343/amazon-sales-2025)
+
 #### Order Performance
 How many orders were completed?
 ```
@@ -11,7 +14,7 @@ SELECT*
 FROM "amazon_sales_data 2025"
 WHERE status='Completed';
 ```
-![image](https://github.com/user-attachments/assets/773fc3a2-5cb3-4161-9025-57437a707c8d)
+![image](https://github.com/user-attachments/assets/3bc9d113-5a48-4444-83c4-9e5047a07016)
 
 How many orders were cancelled?
 ```
@@ -19,7 +22,7 @@ SELECT*
 FROM "amazon_sales_data 2025"
 WHERE status='Cancelled';
 ```
-![image](https://github.com/user-attachments/assets/883bd2bd-1e7e-4565-96cd-abf94f49a2b2)
+![image](https://github.com/user-attachments/assets/2ba19bb5-9819-42ae-805a-776aff7e2ad2)
 
 #### Revenue and Product Performance
 What are the top 5 selling products by *quantity*?
@@ -33,7 +36,7 @@ GROUP BY product
 ORDER BY total_quantity_sold DESC
 LIMIT 5;
 ```
-![image](https://github.com/user-attachments/assets/2fa45056-25db-4530-8ca2-ae7b044f3ad0)
+![image](https://github.com/user-attachments/assets/19834124-a347-4cd0-9cf1-98ede58eeb47)
 
 What are the top 5 selling products by *total sales*?
 ```
@@ -47,7 +50,7 @@ GROUP BY product
 ORDER BY total_sales_sold DESC
 LIMIT 5;
 ```
-![image](https://github.com/user-attachments/assets/aadd99f5-5d0d-467e-99d6-541755b7dbaa)
+![image](https://github.com/user-attachments/assets/ed52adb2-fdfc-4c50-b456-b3f3bf7595bd)
 
 What are the top 5 product categories by *quantity*?
 ```
@@ -110,7 +113,7 @@ GROUP BY category
 ORDER BY total_quantity_cancelled DESC
 LIMIT 5;
 ```
-![image](https://github.com/user-attachments/assets/32e1fe44-8aa7-494e-bb30-4ba21713a90c)
+![image](https://github.com/user-attachments/assets/8df14813-3bba-479a-92a7-2432ba75d2e0)
 
 #### Consumer Insights
 Who are the top 5 customers by purchase amount?
@@ -146,5 +149,6 @@ SUM(CASE WHEN status = 'Cancelled' THEN 1 ELSE 0 END) AS cancelled
 FROM "amazon_sales_data 2025"
 GROUP BY payment_method;
 ```
-![image](https://github.com/user-attachments/assets/748300a7-260e-487d-8c31-adfe6cf0677c)
+![image](https://github.com/user-attachments/assets/0e93a76e-1f47-4f7a-98c2-7a24424120b4)
+
 
