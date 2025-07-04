@@ -150,5 +150,3 @@ FROM "amazon_sales_data 2025"
 GROUP BY payment_method;
 ```
 ![image](https://github.com/user-attachments/assets/0e93a76e-1f47-4f7a-98c2-7a24424120b4)
-
-
