@@ -151,3 +151,11 @@ GROUP BY payment_method;
 ```
 ![image](https://github.com/user-attachments/assets/0e93a76e-1f47-4f7a-98c2-7a24424120b4)
 
+## Key Insights
+-**Laptop** is the top product by revenue ($26K), while **smartwatch** leads in quantity sold.
+
+-Revenue trends fluctuated throughout March, peaking mid-month.
+
+-**Miami** and **Houston** are the highest-performing customer locations.
+
+-Most sales were completed via **PayPal** and **Credit Card** methods.
